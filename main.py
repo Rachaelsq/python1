@@ -92,3 +92,28 @@ actions["u"] = 1
 print(actions.keys())
 print(actions.values())
 print(actions.items())
+
+# delete item at a specific key
+del(actions["u"])
+
+# in operatpr, does a key exist inside of this dictionary
+print("l" in actions)
+
+# ===================
+# CONTROL FLOW - checking if a condition is true, and executing code if it is.if, while, for in loops
+# ===================
+
+# ===================
+# IF STATEMENTS - 
+# ===================
+ 
+key = "r"
+
+if key =="r":
+  print("move right")
+elif key =="l":
+  print("move left")
+else:
+  print("invalid movement")
+
+
