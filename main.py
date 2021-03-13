@@ -35,3 +35,60 @@ print(not_is_at_end)
 score = 10
 is_game_over = score >= 10 and is_at_end
 print(is_game_over)
+
+# ===================
+# COLLECTIONS - ways to store multiple values in one variable. lists, tuples,dictionaries
+# ===================
+
+# ===================
+# LISTS []- can put any type of data in here
+# ===================
+
+
+list = [5, True, "apple"]
+enemy_positions = [5, 10, 15]
+enemy_positions = [5, 10, 15, 20]
+print(enemy_positions[3])
+
+# len checks the length of a list
+print(len(enemy_positions))
+
+# change value of list item
+enemy_positions[0] = 6
+
+#range
+print(enemy_positions[0:2]) 
+
+# append function - adds onto the end
+# list_name.append(25)
+#there is also .insert and .remove
+
+# ===================
+# TUPLES () - cannot change
+# ===================
+high_score = ("jan", 130)
+print(high_score)
+
+# in operator (is used to determine if an element on the left is inside of a collection on the right. is a boolean statement)
+print("jan" in high_score)
+
+# ===================
+# DICTIONARIES dictionary = {key: value}
+# ===================
+
+actions = {"move_right":1, "move_left":-1}
+print(actions["move_right"])
+
+# none key/value
+print(actions.get("g"))
+
+# update a value
+actions["move_right"] = 2
+
+# add a new key value pair
+actions["u"] = 1
+
+# fetch solely keys or values
+print(actions.keys())
+print(actions.values())
+print(actions.items())
